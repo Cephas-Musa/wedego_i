@@ -1,7 +1,7 @@
 <?php
-$host = 'localhost';
+$host = 'https://wedegoo.onrender.com'; // L'URL ou l'adresse de ton service MySQL
 $dbname = 'wedego';
-$username = 'root';
+$user = 'root';
 $password = '';
 
 try {

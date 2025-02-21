@@ -1,0 +1,157 @@
+/* Conteneur principal */
+.container-s {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Carte de chaque programme */
+.tour-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f1f1f1;
+  height: 100%;
+}
+
+.tour-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tour-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.tour-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+.tour-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
+.tour-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  padding: 0 15px;
+}
+
+.tour-dates {
+  font-size: 0.9rem;
+  color: #888;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.form-control {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .tour-card {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  /* Disposition des cartes en grille flexible */
+  .tour-card {
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Cartes de voyage en colonnes sur petits écrans */
+  .container-s {
+    padding: 15px;
+  }
+
+  .tour-title {
+    font-size: 1rem;
+  }
+
+  .tour-description {
+    font-size: 0.9rem;
+  }
+
+  .tour-price {
+    font-size: 0.9rem;
+  }
+
+  .tour-dates {
+    font-size: 0.8rem;
+  }
+
+  /* Empiler les cartes dans une seule colonne sur mobiles */
+  .tour-card {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Réduction de la taille des polices pour les petits écrans */
+  .tour-title {
+    font-size: 0.95rem;
+  }
+
+  .tour-description {
+    font-size: 0.85rem;
+  }
+
+  .tour-price {
+    font-size: 0.85rem;
+  }
+
+  .tour-dates {
+    font-size: 0.75rem;
+  }
+
+  /* Mise en forme des cartes et du formulaire */
+  .form-control {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .tour-img {
+    height: 150px;
+  }
+}
